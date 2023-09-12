@@ -27,16 +27,16 @@ export const postData = async (
     body: JSON.stringify(data),
   });
 
-  if (!res.ok) {
+  if (!res?.ok) {
     console.log('There was an error in POST', {
       url,
       data,
       res,
     });
-    throw new Error(res.statusText);
+    throw new Error(res?.statusText);
   }
 
-  return res.json();
+  return res?.json();
 };
 
 export const toDateTime = (secs: number) => {

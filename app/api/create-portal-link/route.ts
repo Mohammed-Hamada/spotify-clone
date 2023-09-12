@@ -29,7 +29,7 @@ export async function POST() {
       return_url: `${getUrl()}/account`,
     });
 
-    return NextResponse.json({ url: session.url });
+    return NextResponse?.json({ url: session.url });
   } catch (error: any) {
     console.log(error);
     return new NextResponse('internal server error', { status: 500 });
