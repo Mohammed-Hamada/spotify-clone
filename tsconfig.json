@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "typeRoots": ["./use-sound.d.ts"],
     "target": "es5",
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
