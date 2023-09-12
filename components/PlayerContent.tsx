@@ -4,7 +4,8 @@ import { useEffect, useState } from 'react';
 import { BsPauseFill, BsPlayFill } from 'react-icons/bs';
 import { HiSpeakerXMark, HiSpeakerWave } from 'react-icons/hi2';
 import { AiFillStepBackward, AiFillStepForward } from 'react-icons/ai';
-const useSound = require('use-sound');
+// @ts-ignore
+import useSound from 'use-sound';
 
 import { Song } from '@/types';
 import MediaItem from './MediaItem';
