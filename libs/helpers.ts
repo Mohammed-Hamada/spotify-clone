@@ -18,7 +18,6 @@ export const postData = async (
     price: Price;
   }
 ) => {
-  console.log('POST REQUEST', url, data);
   const res: Response = await fetch(url, {
     method: 'POST',
     headers: new Headers({
